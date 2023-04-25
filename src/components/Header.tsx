@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Header() {
   return (
     <>
@@ -7,15 +9,9 @@ function Header() {
         </div>
         <div className="right-part">
           <ul className="weight500">
-            <a href="index.html">
-              <li className="currentSelected">Home</li>
-            </a>
-            <a href="src/about.html">
-              <li>About</li>
-            </a>
-            <a href="src/projects.html">
-              <li>Projects</li>
-            </a>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/projects">Projects</Link>
             <a href="mailto:alextison@icloud.com?subject=Mail from alextison Website">
               <li>Contact</li>
             </a>
