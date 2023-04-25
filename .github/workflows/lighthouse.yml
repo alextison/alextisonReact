@@ -1,5 +1,4 @@
 name: Lighthouse Action
-description: Run Lighthouse for accessibility, performance, SEO and best practices
 
 on:
   workflow_dispatch:
