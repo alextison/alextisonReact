@@ -1,0 +1,99 @@
+@import "_variables.scss";
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  user-select: none;
+  .left-part {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+  }
+  .left-part:hover {
+    color: $light-yellow;
+    transition-duration: 250ms;
+  }
+  .right-part {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    ul {
+      display: flex;
+      justify-content: center;
+      a {
+        padding: 0 10px;
+        transition-duration: 250ms;
+      }
+      a:hover {
+        color: $light-yellow;
+        transition-duration: 250ms;
+      }
+      .currentSelected {
+        color: $dark-yellow;
+        font-weight: 500;
+        transition-duration: 250ms;
+      }
+      .currentSelected:hover {
+        color: $very-light-grey;
+        transition-duration: 250ms;
+      }
+    }
+  }
+}
+
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  user-select: none;
+  .left-part {
+    display: flex;
+    align-self: center;
+    height: max-content;
+    font-size: $size-36;
+    a {
+      transition-duration: 250ms;
+    }
+    a:hover {
+      color: $dark-yellow;
+      transition-duration: 250ms;
+    }
+  }
+  .middle-part {
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 25px 0;
+      a {
+        padding: 0 10px;
+      }
+      svg {
+        display: flex;
+        align-items: center;
+        path {
+          transition-duration: 250ms;
+        }
+      }
+    }
+  }
+  .right-part {
+    display: flex;
+    align-self: center;
+    font-size: $size-24;
+    a {
+      display: inline-flex;
+      align-items: center;
+      transition-duration: 250ms;
+      svg {
+        path {
+          transition-duration: 250ms;
+        }
+      }
+    }
+    a:hover {
+      color: $light-algaeBlue;
+      transition-duration: 250ms;
+    }
+  }
+}
