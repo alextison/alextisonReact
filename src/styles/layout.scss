@@ -1,9 +1,10 @@
 @import "_variables.scss";
+@import "_class.scss";
 
 #header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 15%;
   user-select: none;
   .left-part {
     font-size: 22px;
