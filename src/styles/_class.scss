@@ -1,0 +1,36 @@
+@import "_variables.scss";
+
+.yellow-text {
+  color: $light-yellow;
+}
+
+.grey-text {
+  color: $grey;
+}
+
+.weight700 {
+  font-weight: 700;
+}
+
+.weight600 {
+  font-weight: 600;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.weight300 {
+  font-weight: 300;
+}
+
+.py-25 {
+  padding: 25px 0;
+}
+
+.grey-bar {
+  height: 3px;
+  margin: 60px 0;
+  background-color: $light-black;
+  border-radius: $br-20;
+}
