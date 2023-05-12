@@ -1,0 +1,97 @@
+@import "_variables.scss";
+
+#landing-about {
+  display: flex;
+  flex-direction: row;
+  padding: 75px 0 0 0;
+  margin: 0 15%;
+  .left-part {
+    width: 50%;
+    .welcome-message {
+      font-size: $size-24;
+    }
+    .name {
+      font-size: $size-48;
+      line-height: 62px;
+    }
+    .quote {
+      padding: 50px 0 0 0;
+      font-size: $size-18;
+      line-height: 30px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 25px 0;
+      font-size: $size-18;
+      a {
+        padding: 0 10px;
+      }
+      a:first-child {
+        padding: 0 10px 0 0;
+      }
+      svg {
+        display: flex;
+        path {
+          transition-duration: 250ms;
+        }
+      }
+    }
+    .buttons-row {
+      display: flex;
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: $dark-yellow;
+        border: 2px solid $dark-yellow;
+        border-radius: $br-10;
+        text-align: center;
+        transition-duration: 250ms;
+        svg {
+          padding: 0 5px 0 0;
+          path {
+            transition-duration: 250ms;
+          }
+        }
+      }
+      a:last-child {
+        margin: 0 0 0 20px;
+      }
+      a:hover {
+        background-color: transparent;
+        transition-duration: 250ms;
+      }
+    }
+  }
+  .right-part {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    user-select: none;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 0 0;
+      .landing-about-img-hexagon {
+        margin: 0 20% 0 0;
+        transform: scaleX(-1) scaleY(-1) translateX(10%) translateY(-50%)
+          rotate(40deg);
+        z-index: -1;
+      }
+      .landing-about-img-circle {
+        margin: 0 0 0 -50%;
+        border-radius: 50%;
+        outline: 1px solid $grey;
+        z-index: -2;
+      }
+      .landing-about-img {
+        margin: 12% 0 0 -68%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
